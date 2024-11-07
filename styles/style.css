@@ -222,12 +222,12 @@ html {
 }
 
 /* Show Hamburger Menu on Mobile and Tablets */
-
 @media (max-width: 1060px) {
   .header-contnet-img {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .hamburger-menu {
     display: flex;
@@ -239,15 +239,22 @@ html {
     flex-direction: column;
     gap: 10px;
     position: absolute;
-    top: 80px;
-    right: 20px;
+    top: 0;
+    left: 0;
     background-color: var(--black);
     padding: 20px;
     border-radius: 8px;
+    width: 60%;
+    height: 100vh;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn2 0.3s ease-out;
   }
 
   .nav-links.show {
     display: flex;
+    transform: translateX(0);
   }
 
   .nav-link-part {
@@ -259,5 +266,14 @@ html {
 
   .nav-link-part:hover {
     color: var(--gradient-button);
+  }
+}
+
+@keyframes slideIn2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

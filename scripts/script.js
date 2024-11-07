@@ -9,9 +9,16 @@ $(document).ready(function () {
       $(".navbar-sec").removeClass("navbar-sticky");
     }
   });
-  $(document).ready(function () {
-    $("#hamburger-menu").click(function () {
-      $("#nav-links").toggleClass("show");
-    });
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburgerMenu.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!navLinks.contains(e.target) && !hamburgerMenu.contains(e.target)) {
+      navLinks.classList.remove("show");
+    }
   });
 });
