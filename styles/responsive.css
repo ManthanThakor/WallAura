@@ -1,3 +1,13 @@
+@media (max-width: 1478px) {
+  .custom-prev {
+    left: 44.6%;
+  }
+
+  .custom-next {
+    right: 44.6%;
+  }
+}
+
 @media (max-width: 1080px) {
   .wall-paper-sec {
     flex-wrap: wrap;
@@ -13,12 +23,21 @@
     padding: 10px 80px;
   }
 }
+
 @media (max-width: 900px) {
   .navbar-sec,
   .wall-paper-sec,
   #feature-sec-row,
   .Clients-slider {
     padding: 10px 60px;
+  }
+
+  .custom-prev {
+    left: 40.6%;
+  }
+
+  .custom-next {
+    right: 40.6%;
   }
 }
 
@@ -65,6 +84,7 @@
     transform: translateX(0);
     background-color: black;
     z-index: 99;
+    border-radius: 0px;
     justify-content: center;
   }
 
@@ -97,7 +117,27 @@
     transform: translateX(0);
   }
 }
-
+@media screen and (max-width: 537px) {
+  .custom-prev {
+    left: 15px;
+    font-size: 20px;
+  }
+  #arrow-client {
+    padding: 5px;
+  }
+  .custom-next {
+    right: 15px;
+    font-size: 20px;
+  }
+  .custom-prev,
+  .custom-next {
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  .Clients-section {
+    padding: 20px;
+  }
+}
 @media (max-width: 500px) {
   .card-part {
     width: 100%;

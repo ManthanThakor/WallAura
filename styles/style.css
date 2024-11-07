@@ -166,6 +166,8 @@ p {
     transform: translate(-50%, -50%);
   }
 }
+
+/* logo */
 .logo-sec {
   filter: drop-shadow(2px 4px 6px black);
 }
@@ -177,6 +179,9 @@ p {
   margin-bottom: 20px;
   font-weight: 700;
   color: var(--white);
+}
+.nav-links {
+  position: relative;
 }
 
 .header-content p {
