@@ -439,6 +439,7 @@ p {
 .Clients-section {
   text-align: center;
   padding: 50px 0;
+  position: relative;
 }
 
 .Clients-heading {
@@ -494,7 +495,8 @@ p {
 .slick-center {
   background: var(--gradient-button);
 }
-/* Slick Slider Custom Navigation Styles */
+
+/* Custom Arrow Icons */
 .custom-prev,
 .custom-next {
   position: absolute;
@@ -508,7 +510,6 @@ p {
   transform: translateY(-50%);
   transition: all 0.3s ease;
 }
-
 .custom-prev {
   left: 10px;
 }
@@ -522,21 +523,6 @@ p {
   color: #f7d51c;
   transform: translateY(-50%) scale(1.2);
 }
-
-/* Custom Arrow Icons */
-.arrow-left::before {
-  content: "←";
-}
-
-.arrow-right::before {
-  content: "→";
-}
-
-.slick-prev,
-.slick-next {
-  display: none !important;
-}
-
 /* ======================== */
 /* Footer section */
 /* ======================== */
