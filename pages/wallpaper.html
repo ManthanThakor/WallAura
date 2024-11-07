@@ -44,20 +44,86 @@
     />
   </head>
   <body>
+    <!-- ============= -->
+    <!-- Header-Sec -->
+    <!-- ============= -->
+
+    <div class="header">
+      <!-- Navbar Section -->
+      <div class="navbar-sec">
+        <div class="logo">
+          <a href="index.html" class="logo-name">
+            <img
+              src="../images/logo/logo.png"
+              alt="logo"
+              height="50"
+              width="60"
+              class="logo-sec"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburger Icon for Mobile/Tablet -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- Nav links  -->
+        <div class="nav-links" id="nav-links">
+          <div id="particles-js"></div>
+          <button class="close-btn" onclick="closeMenu()">×</button>
+
+          <a href="../index.html" class="nav-link-part">HOME</a>
+          <a href="../index.html#feature-part" class="nav-link-part">FEATURE</a>
+          <a href="wallpaper.html" class="nav-link-part">WALLPAPER</a>
+          <a href="#about-section" class="nav-link-part">ABOUT US</a>
+          <a href="#contact-section" class="nav-link-part">CONTACT</a>
+          <a href="pages/login.html" class="nav-link-part">LOGIN</a>
+          <a href="pricing.html" class="nav-link-part">PREMIUM</a>
+        </div>
+      </div>
+
+      <!-- Header Content -->
+      <div class="header-content-sec">
+        <div class="header-content">
+          <h1>wallpaper section</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+            asperiores!
+          </p>
+          <button id="contact-header">Contact Us</button>
+        </div>
+
+        <div class="header-contnet-img">
+          <img
+            src="../images/wallpaperSection/background/wplogo.png"
+            alt="WallAura image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ============= -->
+    <!-- header-wallpaper-sec -->
+    <!-- ============= -->
+
     <div class="header-wallpaper-sec">
       <div class="logo">Wallpaper</div>
       <div class="search-bar">
-        <input placeholder="Wallpaper" type="text" />
-        <button>
-          <i class="fas fa-search"> </i>
-          Search
-        </button>
+        <input id="search-input" placeholder="Wallpaper" type="text" />
+        <button id="search-button"><i class="fas fa-search"></i> Search</button>
       </div>
     </div>
     <div class="container-fluid" id="img-wallpaper-container">
       <div class="sidebar">
-        <!-- Asset Type Collapsible -->
         <div class="filter-group">
+          <div class="filter-actions">
+            <button id="clear-filters" class="btn btn-secondary">
+              Clear Filters
+            </button>
+          </div>
           <h3>
             <button
               class="btn btn-link"
@@ -72,18 +138,16 @@
           </h3>
           <div id="CategoryTypeCollapse" class="collapse">
             <ul class="list-unstyled">
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Gaming</a></li>
-              <li><a href="#">Car</a></li>
-              <li><a href="#">Cartoon</a></li>
-              <li><a href="#">Hd 4k</a></li>
-              <li><a href="#">Anime</a></li>
-              <li><a href="#">Nature</a></li>
+              <li><a href="#" data-category="Trending">Trending</a></li>
+              <li><a href="#" data-category="Gaming">Gaming</a></li>
+              <li><a href="#" data-category="Car">Car</a></li>
+              <li><a href="#" data-category="Cartoon">Cartoon</a></li>
+              <li><a href="#" data-category="Hd 4k">Hd 4k</a></li>
+              <li><a href="#" data-category="Anime">Anime</a></li>
+              <li><a href="#" data-category="Nature">Nature</a></li>
             </ul>
           </div>
         </div>
-
-        <!-- License Collapsible -->
         <div class="filter-group">
           <h3>
             <button
@@ -99,13 +163,11 @@
           </h3>
           <div id="licenseCollapse" class="collapse">
             <ul class="list-unstyled">
-              <li><a href="#">Free</a></li>
-              <li><a href="#">Premium</a></li>
+              <li><a href="#" data-license="Free">Free</a></li>
+              <li><a href="#" data-license="Premium">Premium</a></li>
             </ul>
           </div>
         </div>
-
-        <!-- AI-generated Collapsible -->
         <div class="filter-group">
           <h3>
             <button
@@ -121,14 +183,18 @@
           </h3>
           <div id="aiGeneratedCollapse" class="collapse">
             <ul class="list-unstyled">
-              <li><a href="#">Exclude AI-generated</a></li>
-              <li><a href="#">Only AI-generated</a></li>
+              <li>
+                <a href="#" data-ai="Exclude AI-generated"
+                  >Exclude AI-generated</a
+                >
+              </li>
+              <li>
+                <a href="#" data-ai="Only AI-generated">Only AI-generated</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-
-      <!-- Lightbox Modal -->
       <div class="content">
         <h1>Wallpaper Images</h1>
         <p>
@@ -146,13 +212,16 @@
 
     <!-- jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../scripts/wallpaper.js"></script>
-
-    <!-- Bootstrap  -->
+    <!-- Bootstrap Bundle with Popper (includes both Bootstrap JS and Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- slick slider library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- particles JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="../scripts/wallpaper.js"></script>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>

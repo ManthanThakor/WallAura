@@ -4,10 +4,10 @@
     "alt": "A beautiful landscape with mountains and a lake",
     "src": "https://storage.googleapis.com/a1aa/image/G4EGkwMXIRLRGdqXN9WLPiocAPtkbBQ2QuJuJUj389xxxq7E.jpg",
     "width": 300,
-    "height": 200,
-    "category": "Nature",
-    "premium": false,
-    "aiGenerated": false,
+    "height": "auto",
+    "category": "Trending",
+    "premium": true,
+    "aiGenerated": true,
     "description": "A beautiful landscape featuring mountains and a serene lake."
   },
   {
@@ -15,10 +15,10 @@
     "alt": "A vibrant sunset with a silhouette of a tree and birds",
     "src": "https://storage.googleapis.com/a1aa/image/TMlkq6DNAxLaJl91bGhqr7H6oUpWeA3pxkB6qL6Vl34ijV3JA.jpg",
     "width": 300,
-    "height": 200,
+    "height": "auto",
     "category": "Nature",
     "premium": true,
-    "aiGenerated": false,
+    "aiGenerated": true,
     "description": "A stunning sunset scene with the silhouette of a tree and flying birds."
   },
   {
@@ -26,9 +26,9 @@
     "alt": "An abstract colorful wave pattern",
     "src": "https://storage.googleapis.com/a1aa/image/gnuUkiNjf81NOCuZyiprgLjeyK7CHXvzu4z6BzGP0l9GHruTA.jpg",
     "width": 300,
-    "height": 200,
+    "height": "auto",
     "category": "Abstract",
-    "premium": false,
+    "premium": true,
     "aiGenerated": true,
     "description": "An abstract image featuring colorful wave patterns with smooth gradients."
   },
@@ -39,8 +39,8 @@
     "width": 300,
     "height": 200,
     "category": "Promo",
-    "premium": false,
-    "aiGenerated": false,
+    "premium": true,
+    "aiGenerated": true,
     "description": "A banner image used for promotional purposes showcasing Storyset."
   },
   {
@@ -49,9 +49,9 @@
     "src": "https://storage.googleapis.com/a1aa/image/tc786Jw7qZr9Etf8NOgYpQb1cQ8sacOMIB18Jjy2QtRmjV3JA.jpg",
     "width": 300,
     "height": 200,
-    "category": "Nature",
-    "premium": true,
-    "aiGenerated": false,
+    "category": "Gaming",
+    "license": "Premium",
+    "aiGenerated": "Only AI-generated",
     "description": "A peaceful landscape with mountains surrounding a serene lake."
   },
   {
@@ -60,9 +60,9 @@
     "src": "https://storage.googleapis.com/a1aa/image/TfwKKUbcQyQlfEGZa5Y3GM8SN0fCERPeB1M8wd8Lkckkcs6OB.jpg",
     "width": 300,
     "height": 200,
-    "category": "Nature",
-    "premium": false,
-    "aiGenerated": true,
+    "category": "Trending",
+    "license": "Free",
+    "aiGenerated": "Exclude AI-generated",
     "description": "A vibrant autumn scene filled with colorful falling leaves."
   }
 ]

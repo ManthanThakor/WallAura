@@ -1,18 +1,16 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
+@import url(../styles/style.css);
+
 .header-wallpaper-sec {
   display: flex;
   align-items: center;
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
 }
 .header-wallpaper-sec .logo {
   font-size: 24px;
+  align-items: center;
   font-weight: bold;
 }
 .header-wallpaper-sec .search-bar {
@@ -145,4 +143,21 @@ body {
   width: 100%; /* Ensure images fill their container */
   height: auto;
   object-fit: cover; /* Optional: Adjust image size to cover the container */
+}
+.filter-group a {
+  display: block;
+  padding: 8px 12px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.filter-group a:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-group a.active {
+  background-color: #007bff; /* Blue background for active filter */
+  color: #fff; /* White text for active filter */
 }
