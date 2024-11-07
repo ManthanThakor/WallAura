@@ -128,3 +128,21 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
+#image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-item {
+  width: 300px; /* adjust based on your design */
+  height: 200px; /* adjust based on your design */
+}
+
+.image-item img {
+  width: 100%; /* Ensure images fill their container */
+  height: auto;
+  object-fit: cover; /* Optional: Adjust image size to cover the container */
+}
