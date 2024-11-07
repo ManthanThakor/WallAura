@@ -16,7 +16,8 @@
 @media (max-width: 900px) {
   .navbar-sec,
   .wall-paper-sec,
-  #feature-sec-row {
+  #feature-sec-row,
+  .Clients-slider {
     padding: 10px 60px;
   }
 }
@@ -24,7 +25,8 @@
 @media (max-width: 768px) {
   .wall-paper-sec,
   #feature-sec-row,
-  .navbar-sec {
+  .navbar-sec,
+  .Clients-slider {
     padding: 10px 15px;
   }
   .header-content h1 {

@@ -32,15 +32,12 @@ p {
 /* =============== */
 
 .header {
-  background: url(../images/background/bg-circle.png),
-    url(../images/background/bg-triangle.png),
-    url(../images/background/bg-bottom.png),
+  background: url(../images/background/bg-circle.png) left 0px top 0px no-repeat,
+    url(../images/background/bg-triangle.png) right 0px top 50% no-repeat,
+    url(../images/background/bg-bottom.png) center bottom/contain no-repeat,
     linear-gradient(to bottom right, var(--bg-Primary), var(--bg-secondary));
-  background-position: left 0px top 0px, right 0px top 50%, center bottom;
-  background-repeat: no-repeat;
   height: 600px;
   position: relative;
-
   color: var(--white);
   animation: fadeIn 1.5s ease;
 }
@@ -440,6 +437,8 @@ p {
   text-align: center;
   padding: 50px 0;
   position: relative;
+  /* height: 550px; */
+  overflow: hidden;
 }
 
 .Clients-heading {
@@ -456,17 +455,26 @@ p {
 }
 
 .Clients-slider {
-  max-width: 1000px;
+  padding: 20px 80px;
   margin: 0 auto;
   display: flex;
   gap: 20px;
+  overflow: hidden;
 }
 .slick-track {
   display: flex;
   gap: 20px;
 }
+.Clients-slider {
+  padding: 20px;
+}
+.slick-list {
+  height: 325px !important;
+}
 
 .Clients-item {
+  box-sizing: border-box;
+
   padding: 20px;
   margin: 20px;
   background: var(--white);
@@ -485,7 +493,7 @@ p {
 }
 
 .rating {
-  color: #f7d51c; /* gold color for stars */
+  color: #f7d51c;
   margin-bottom: 10px;
 }
 
@@ -494,35 +502,54 @@ p {
 }
 .slick-center {
   background: var(--gradient-button);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid var(--black);
+}
+
+.slick-center h4,
+.slick-center p {
+  color: white;
 }
 
 /* Custom Arrow Icons */
+
 .custom-prev,
 .custom-next {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   z-index: 10;
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: var(--primary-color); /* Use your primary color */
-  transform: translateY(-50%);
+  color: var(--primary-color);
   transition: all 0.3s ease;
 }
+
 .custom-prev {
-  left: 10px;
+  left: 46.6%;
+  transform: translateX(-50%);
 }
 
 .custom-next {
-  right: 10px;
+  right: 46.6%;
+  transform: translateX(-50%);
 }
 
 .custom-prev:hover,
 .custom-next:hover {
-  color: #f7d51c;
-  transform: translateY(-50%) scale(1.2);
+  color: #e3e5f4;
 }
+
+#arrow-client {
+  padding: 10px;
+  border-radius: 30%;
+  background: var(--gradient-button);
+}
+#arrow-client:hover {
+  background: var(--gradient-button-hover);
+}
+
 /* ======================== */
 /* Footer section */
 /* ======================== */
@@ -537,6 +564,7 @@ p {
   width: 100%;
   font-size: 18px;
   font-weight: 500;
+  margin-top: 20px;
 }
 
 .footer .footer-content {

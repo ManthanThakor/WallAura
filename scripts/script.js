@@ -2,12 +2,13 @@ $(document).ready(function () {
   $(".Clients-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 2,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    // infinite: false,
+    autoplaySpeed: 2000,
     arrows: true,
     dots: false,
     centerMode: true,
-    centerPadding: "40px",
+    centerPadding: "20px",
     prevArrow: $(".custom-prev"),
     nextArrow: $(".custom-next"),
     responsive: [
@@ -15,7 +16,6 @@ $(document).ready(function () {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          centerMode: false,
         },
       },
     ],
