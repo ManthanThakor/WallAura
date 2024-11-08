@@ -245,13 +245,13 @@
 .content .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 200px;
   gap: 15px;
 }
 
 .image-item {
   position: relative;
-  max-height: 320px;
+  /* max-height: 320px; */
 
   overflow: hidden;
   transition: transform 0.3s ease;
