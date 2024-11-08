@@ -12,10 +12,20 @@ $(document).ready(function () {
 
     images.forEach(function (image) {
       var imageItem = $("<div class='image-item'>");
+      var columnSpan = image.columnSpan || 1;
+      var rowSpan = image.rowSpan || 1;
+
+      // Apply the grid span styles
+      imageItem.css({
+        "grid-column": "span " + columnSpan,
+        "grid-row": "span " + rowSpan,
+      });
+
       var img = $("<img>")
         .attr("src", image.src)
         .attr("alt", image.alt)
-        .addClass("img-thumbnail");
+        .addClass("img-sec");
+
       imageItem.append(img);
       imageGrid.append(imageItem);
     });

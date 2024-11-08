@@ -112,14 +112,14 @@
     <div class="header-wallpaper-sec">
       <div class="logo">Wallpaper</div>
       <div class="search-bar">
-        <input id="search-input" placeholder="Wallpaper" type="text" />
+        <input id="search-input" placeholder="Search here..." type="text" />
         <button id="search-button"><i class="fas fa-search"></i></button>
       </div>
     </div>
 
-    <!-- ============= -->
+    <!-- =========================== -->
     <!-- Image container section -->
-    <!-- ============= -->
+    <!-- =========================== -->
 
     <div class="container-fluid" id="img-wallpaper-container">
       <div class="sidebar">
@@ -131,7 +131,7 @@
           </div>
           <h3>
             <button
-              class="btn btn-link"
+              class="btn btn-link filter-btn-part"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#CategoryTypeCollapse"
@@ -150,13 +150,14 @@
               <li><a href="#" data-category="Hd 4k">Hd 4k</a></li>
               <li><a href="#" data-category="Anime">Anime</a></li>
               <li><a href="#" data-category="Nature">Nature</a></li>
+              <li><a href="#" data-category="Nature">Animal</a></li>
             </ul>
           </div>
         </div>
         <div class="filter-group">
           <h3>
             <button
-              class="btn btn-link"
+              class="btn btn-link filter-btn-part"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#licenseCollapse"
@@ -168,7 +169,7 @@
           </h3>
           <div id="licenseCollapse" class="collapse">
             <ul class="list-unstyled">
-              <li><a href="#" data-license="Free">Free</a></li>
+              <li><a href="#" data-license="Free" class="mb-2">Free</a></li>
               <li><a href="#" data-license="Premium">Premium</a></li>
             </ul>
           </div>
@@ -176,7 +177,7 @@
         <div class="filter-group">
           <h3>
             <button
-              class="btn btn-link"
+              class="btn btn-link filter-btn-part"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#aiGeneratedCollapse"
@@ -189,7 +190,7 @@
           <div id="aiGeneratedCollapse" class="collapse">
             <ul class="list-unstyled">
               <li>
-                <a href="#" data-ai="Exclude AI-generated"
+                <a href="#" data-ai="Exclude AI-generated" class="mb-2"
                   >Exclude AI-generated</a
                 >
               </li>
@@ -211,6 +212,16 @@
         <div id="image-grid" class="image-grid"></div>
       </div>
     </div>
+    <!-- ----------------- -->
+    <!-- copyright Section -->
+    <!-- ----------------- -->
+    <footer class="footer" id="contact-section">
+      <div class="footer-content">
+        <p>
+          &copy; <span id="current-year"></span> WallAura. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
     <!-- jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

@@ -92,6 +92,7 @@ p {
   position: relative;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 /* Navbar Link  */
 .nav-link-part {
@@ -128,9 +129,13 @@ p {
 }
 
 .nav-link-part.active {
-  color: var(--primary-color);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  text-shadow: 4px 4px 4px #5f5d5d;
   font-weight: bold;
-  text-decoration: underline;
+  background: var(--gradient-button);
+  text-decoration: none !important;
+  border-radius: 1ch;
 }
 
 /* Close Button  */
@@ -141,7 +146,7 @@ p {
   color: var(--white);
   font-size: 2rem;
   position: absolute;
-  top: 15px;
+  top: 0px;
   right: 20px;
   cursor: pointer;
   z-index: 20;
@@ -149,7 +154,7 @@ p {
 }
 
 .close-btn:hover {
-  color: var(--primary-color);
+  color: rgb(9, 255, 0);
 }
 
 /* Header Content */
@@ -558,6 +563,7 @@ p {
 #arrow-client {
   padding: 10px;
   border-radius: 30%;
+
   background: var(--gradient-button);
 }
 #arrow-client:hover {
@@ -641,4 +647,30 @@ p {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* ======================== */
+/* scrollbar */
+/* ======================== */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fcfbfb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-button-hover);
+  border-radius: 10px;
+  border: 3px solid #fff;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gradient-button);
+  cursor: grab;
 }

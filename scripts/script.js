@@ -155,6 +155,17 @@ $(document).ready(function () {
       navLinks.classList.remove("show");
     }
   });
+
+  $(".nav-link-part").each(function () {
+    if (this.href === window.location.href.split("#")[0]) {
+      $(this).addClass("active");
+    }
+  });
+
+  $(".nav-link-part").click(function (e) {
+    $(".nav-link-part").removeClass("active");
+    $(this).addClass("active");
+  });
 });
 
 function closeMenu() {
@@ -175,4 +186,10 @@ AOS.init({
   duration: 1000,
   easing: "ease-in-out",
   once: true,
+});
+
+const exploreWall = document.getElementById("wallpaper-sec-nav");
+
+exploreWall.addEventListener("click", function () {
+  window.location.href = "pages/wallpaper.html";
 });
