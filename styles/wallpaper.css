@@ -251,12 +251,13 @@
 
 .image-item {
   position: relative;
-  /* max-height: 320px; */
-
+  height: 200px;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
+.image-item[style*="grid-area: span 2"] {
+  height: 400px;
+}
 .image-item:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
