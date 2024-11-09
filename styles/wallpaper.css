@@ -255,12 +255,74 @@
   overflow: hidden;
   transition: transform 0.3s ease;
 }
+
 .image-item[style*="grid-area: span 2"] {
   height: 400px;
 }
+
 .image-item:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-item:hover .hover-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.download-btn,
+.embed-btn {
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.download-btn:hover,
+.embed-btn:hover {
+  transform: scale(1.1);
+}
+
+#popup-notification {
+  position: fixed;
+  top: 20%;
+  /* transform: translate(50%); */
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#popup-notification.show {
+  opacity: 1;
+}
+
+#popup-notification.hidden {
+  display: none;
 }
 
 .image-item img {
@@ -270,9 +332,6 @@
   object-position: center;
   transition: transform 0.5s ease;
 }
-
-/* .image-item:hover img {
-} */
 
 .image-item .image-label {
   position: absolute;
