@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - WallAura</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/aboutUs.css" />
+
+    <!-- Favicon CSS -->
+
+    <link href="../images/favicon/faviconLogo.png" rel="icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- google font  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <!-- FontAwesome For Icons -->
+    <script
+      src="https://kit.fontawesome.com/cb104e752f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick slider -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <!-- ----------------- -->
+  <!-- Header Section -->
+  <!-- ----------------- -->
+  <body>
+    <div class="header">
+      <!-- Navbar Section -->
+      <div class="navbar-sec">
+        <div class="logo">
+          <a href="index.html" class="logo-name">
+            <img
+              src="../images/logo/logo.png"
+              alt="logo"
+              height="50"
+              width="60"
+              class="logo-sec"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburger Icon for Mobile/Tablet -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- Nav links  -->
+        <div class="nav-links" id="nav-links">
+          <div id="particles-js"></div>
+          <button class="close-btn" onclick="closeMenu()">×</button>
+
+          <a href="../index.html" class="nav-link-part">HOME</a>
+          <a href="../index.html/#feature-part" class="nav-link-part"
+            >FEATURE</a
+          >
+          <a href="wallpaper.html" class="nav-link-part">WALLPAPER</a>
+          <a href="#about-section" class="nav-link-part">ABOUT US</a>
+          <a href="contactus.html" class="nav-link-part">CONTACT</a>
+          <a href="pricing.html" class="nav-link-part">PREMIUM</a>
+        </div>
+      </div>
+
+      <!-- Header Content -->
+      <div class="header-content-sec">
+        <div class="header-content">
+          <h1>
+            Explore the World of Stunning Wallpapers for Every Mood and Style
+          </h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+            asperiores!
+          </p>
+          <button id="contact-header">Contact Us</button>
+        </div>
+
+        <div class="header-contnet-img">
+          <img
+            src="../images/header-sec/sword_lady_footer.png"
+            alt="WallAura image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- -->
+    <!-- About us  Section -->
+    <!-- ----------------- -->
+
+    <section id="about-section" class="about-us-section">
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Who We Are</h2>
+        <p class="lead text-center mb-5">
+          At WallAura, we are passionate about delivering high-quality, stunning
+          wallpapers that elevate your digital experience. Our team of designers
+          and curators carefully selects and crafts each wallpaper to fit a
+          variety of styles, moods, and themes.
+        </p>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h3>Our Mission</h3>
+            <p>
+              We aim to provide the best digital art in the form of wallpapers
+              for all kinds of devices. Whether you are looking for a
+              minimalistic design, a nature-inspired scene, or an AI-generated
+              masterpiece, WallAura has something to match your needs.
+            </p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h3>Why Choose Us?</h3>
+            <ul>
+              <li>High-resolution images perfect for all devices</li>
+              <li>Free and Premium options available</li>
+              <li>Easy-to-navigate interface and user experience</li>
+              <li>Exclusive, handpicked wallpapers updated regularly</li>
+              <li>AI-generated and curated wallpaper options</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h3>Our Values</h3>
+          <p>
+            Creativity, quality, and customer satisfaction are the core values
+            that drive our work at WallAura. We aim to provide not just a
+            product, but an experience that inspires and enhances the way you
+            personalize your digital space.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------- -->
+    <!-- Team Section -->
+    <!-- ----------------- -->
+
+    <div class="container">
+      <div class="title">ACTIVE TEAM MEMBERS</div>
+      <div class="underline"></div>
+      <div class="team">
+        <div class="member">
+          <img
+            alt="Image of Killer Master, Blockchain Expert"
+            height="100"
+            src="https://storage.googleapis.com/a1aa/image/45eJzujOOfqVxEAoUFGrEsJkw55pnN1souC3eI7AKtb2dggnA.jpg"
+            width="100"
+          />
+          <h3>KILLER MASTER</h3>
+          <p>Blockchain Expert</p>
+        </div>
+        <div class="member">
+          <img
+            alt="Image of Tanu Mark, Developer"
+            height="100"
+            src="https://storage.googleapis.com/a1aa/image/sBa3w6EmZ77DClae43TQzFR0wfm5aosseXPrYkimuUa6dggnA.jpg"
+            width="100"
+          />
+          <h3>TANU MARK</h3>
+          <p>Developer</p>
+        </div>
+        <div class="member">
+          <img
+            alt="Image of Thompson Scot, Art Director"
+            height="100"
+            src="https://storage.googleapis.com/a1aa/image/H1PhsKnY2n75BdCk4HAd5RToxOwEwrDV7FEk30mpWLsuDE8E.jpg"
+            width="100"
+          />
+          <h3>THOMPSON SCOT</h3>
+          <p>Art Director</p>
+          <div class="status">
+            <i class="fas fa-circle"> </i>
+          </div>
+        </div>
+        <div class="member">
+          <img
+            alt="Image of Shakh Danial, Crypto Advisor"
+            height="100"
+            src="https://storage.googleapis.com/a1aa/image/o8zi5es6iC1OdCUwU9KlS81hPTIi1XXUDHfdzq2xNLW5OQwTA.jpg"
+            width="100"
+          />
+          <h3>SHAKH DANIAL</h3>
+          <p>Crypto Advisor</p>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------- -->
+    <!-- copyright Section -->
+    <!-- ----------------- -->
+    <footer class="footer" id="contact-section">
+      <div class="footer-content">
+        <p>
+          &copy; <span id="current-year"></span> WallAura. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap Bundle with Popper (includes both Bootstrap JS and Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- slick slider library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- particles JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="../scripts/script.js"></script>
+    <script></script>
+  </body>
+</html>

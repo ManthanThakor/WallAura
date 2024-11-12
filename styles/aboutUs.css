@@ -1,0 +1,97 @@
+/* About Us Section */
+.about-us-section {
+  padding: 60px 0;
+}
+
+.about-us-section h2 {
+  font-size: 2.5rem;
+  font-family: "Tangerine", serif;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.about-us-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-us-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-us-section ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.about-us-section .container {
+  max-width: 1200px;
+}
+
+.about-us-section .row > .col-md-6 {
+  padding: 0 15px;
+}
+
+.about-us-section .text-center h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: var(--secondary-color);
+}
+
+.about-us-section .text-center p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Out-team */
+
+.container {
+  padding: 50px 0;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.underline {
+  width: 50px;
+  height: 5px;
+  background-color: #00ff00;
+  margin: 0 auto 40px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.member {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+.member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.member h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+.member p {
+  font-size: 14px;
+  color: #00ff00;
+  margin: 0;
+}
+.member .status {
+  color: #00ff00;
+  font-size: 12px;
+  margin-top: 5px;
+}
