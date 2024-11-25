@@ -111,6 +111,10 @@
   .close-btn {
     display: block;
   }
+
+  .content .image-grid {
+    display: block; /* or display: flex; */
+  }
 }
 @keyframes slideIn2 {
   from {
