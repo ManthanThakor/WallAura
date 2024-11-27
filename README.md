@@ -40,7 +40,7 @@
 ---
 
 ## View Live
-Visit the live website: WallAura
+Visit the live website: [**WallAura**](https://manthanthakor.github.io/WallAura/)
 <div align="center" style="border: 2px solid #4CAF50; padding: 20px; border-radius: 10px; width: 300px; margin: 20px auto; font-family: Arial, sans-serif;">
 
 [**View Live - WallAura**](https://manthanthakor.github.io/WallAura/)
