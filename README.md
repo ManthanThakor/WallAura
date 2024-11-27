@@ -46,6 +46,7 @@ Visit the live website: [**WallAura**](https://manthanthakor.github.io/WallAura/
 
 ## 📸 Screenshots
 Header Section
+![WallAura Header Section](Demo-Image/HeaderSection.png)
 
 Feature Section
 
