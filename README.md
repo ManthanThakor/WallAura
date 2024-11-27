@@ -78,7 +78,7 @@ This project is licensed under the MIT License. Feel free to use and modify as n
 
 ## 💡 Author
 - Manthan Thakor
-- GitHub: @manthanthakor
+- GitHub: [@manthanthakor](https://github.com/ManthanThakor)
 - Email: thakormanthan948@gmail.com
 
 ---
