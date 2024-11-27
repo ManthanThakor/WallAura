@@ -46,11 +46,11 @@ Visit the live website: [**WallAura**](https://manthanthakor.github.io/WallAura/
 
 ## 📸 Screenshots
 
-# Header Section
+### Header Section
 
 ![WallAura Header Section](Demo-Image/HeaderSection.png)
 
-# Wallpaper Gallery
+### Wallpaper Gallery
 
 ![WallAura WallpaperSection](Demo-Image/WallpaperSection.png)
 
