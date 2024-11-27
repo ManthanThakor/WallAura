@@ -41,9 +41,47 @@
 
 ## View Live
 Visit the live website: [**WallAura**](https://manthanthakor.github.io/WallAura/)
-<div align="center" style="border: 2px solid #4CAF50; padding: 20px; border-radius: 10px; width: 300px; margin: 20px auto; font-family: Arial, sans-serif;">
 
-[**View Live - WallAura**](https://manthanthakor.github.io/WallAura/)
+---
 
-</div>
+## 📸 Screenshots
+Header Section
+
+Feature Section
+
+Wallpaper Gallery
+
+---
+
+## ✨ Future Enhancements
+- Add advanced filters for wallpapers (e.g., categories, AI-generated wallpapers, premium options).
+- Implement a lightbox effect for viewing images.
+- Add a user registration and login system for personal collections.
+- Enhance search functionality to include tags and keywords.
+
+--- 
+
+## 🛠️ Dependencies
+- Bootstrap
+- jQuery
+- Slick Carousel
+- AOS.js
+- Particles.js
+- FontAwesome
+
+---
+
+## 📝 License
+This project is licensed under the MIT License. Feel free to use and modify as needed.
+
+---
+
+## 💡 Author
+Manthan Thakor
+GitHub: @manthanthakor
+Email: thakormanthan948@gmail.com
+
+---
+
+Feel free to modify this as needed for your project!
 
